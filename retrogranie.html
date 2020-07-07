@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Retrogranie</title>
+	
+	<meta name="description" content="Serwis o starcy grach pochodzących Nintendo entertainment System" />
+	<meta name="keywords" content="gry, komputerowe, retyro, nes, konsole, retrogranie, stare gry" />
+	
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+	<link href="css/fontello.css" rel="stylesheet" type="text/css" />
+	
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="header">
+			<div class="logo">
+				<img src="pad.png" style="float: left;" />
+				<span style="color: #c34f4f">retro</span>granie.com	
+     		    <div style="clear:both;"></div>
+		    </div>
+	    </div>
+		<div class="nav"></div>
+
+		<div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat ipsum quis est venenatis consequat. Curabitur id orci et elit pulvinar tincidunt. Suspendisse quis mattis odio, non rutrum nunc. Aenean consequat tempor sagittis. Ut convallis mi in nulla pretium suscipit. Sed sed ornare purus. Morbi a velit et ipsum hendrerit ultricies condimentum id tellus. Nunc vitae aliquam sem. Integer eu sapien laoreet, pharetra turpis vitae, laoreet purus. Mauris at laoreet nisi. Morbi vitae tortor nec turpis venenatis fringilla quis vitae risus. Proin non mauris in tellus maximus pretium. Donec dignissim dignissim congue. Cras tincidunt erat sed mauris lacinia dignissim. Donec feugiat elit dictum, imperdiet elit quis, rhoncus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+			<p>Phasellus gravida vel ex in porttitor. Donec eget elit posuere, sodales purus ut, rutrum orci. Phasellus sed pulvinar neque. Sed aliquet vulputate tortor porta lacinia. Maecenas quis est convallis, pulvinar lacus nec, aliquam nisl. Cras ullamcorper ultrices iaculis. Aenean et ex imperdiet, aliquam lacus et, hendrerit neque. Pellentesque purus leo, pellentesque vel mollis ut, iaculis eget lectus.</p>
+			
+			<p>Fusce aliquet malesuada neque nec tristique. Ut nec egestas lacus. Proin mattis, dolor a imperdiet facilisis, ex lectus vulputate dolor, a tincidunt tellus tortor vel risus. Sed sollicitudin nisi tempor ante eleifend faucibus. Sed et tempus ex. Morbi pulvinar nisi sit amet purus vehicula ultrices. Morbi at dignissim urna, ac aliquam justo. Sed eu diam magna. Pellentesque porta finibus ultricies. Fusce lacinia laoreet est ac rhoncus. Duis ultrices leo sed magna ornare venenatis. Proin eget ligula egestas, ornare neque eu, volutpat felis. Ut nec sem pharetra, dapibus ante vitae, vestibulum risus. Integer ut ipsum non diam vehicula ultrices. Ut in interdum orci.</p>
+			
+			<p>Curabitur et massa pulvinar, bibendum tortor at, porttitor sapien. Praesent laoreet pulvinar mauris, non tincidunt purus. Donec sed lacus pulvinar, ornare massa nec, egestas orci. Vestibulum laoreet eleifend malesuada. Praesent ut sem quis nulla faucibus placerat. Sed porttitor auctor risus ut lacinia. Nullam diam diam, sollicitudin at arcu non, dictum lobortis quam.</p>
+			
+			<p>Nullam nibh risus, ullamcorper ac justo eget, hendrerit efficitur nunc. Aliquam faucibus pellentesque risus at molestie. Mauris placerat faucibus nunc, vel tincidunt sem volutpat nec. Nunc a lacus dui. Cras mollis velit et sollicitudin cursus. Praesent ornare vitae odio a pharetra. Aliquam condimentum aliquet neque, non convallis arcu sagittis eget. Donec ac convallis leo. Suspendisse potenti. Ut dictum, nunc nec luctus euismod, nisl eros ultricies tortor, tempor convallis nisl nibh sed nulla. Cras posuere urna a convallis vehicula. Cras ac feugiat enim.</p>
+		</div>
+		
+		<div class="socials">
+			<div class="socialdivs">
+				<div class="fb">
+					<i class="icon-facebook-rect"></i>
+				</div>
+				<div class="yt">
+					<i class="icon-youtube"></i>
+				</div>
+				<div class="tw">
+					<i class="icon-twitter-bird"></i>
+				</div>
+				<div class="gplus">
+					<i class="icon-googleplus-rect"></i>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+
+		<div class="footer">Retrogranie.com &copy; 2020 Thank you for your visit Mario! But our Princess is in another castle ;-)</div>
+	</div>
+
+	<script src="jquery-1.11.3.min.js"></script>
+
+	<script>
+
+		$(document).ready(function() {
+		var NavY = $('.nav').offset().top;
+		 
+		var stickyNav = function(){
+		var ScrollY = $(window).scrollTop();
+			  
+		if (ScrollY > NavY) { 
+			$('.nav').addClass('sticky');
+		} else {
+			$('.nav').removeClass('sticky'); 
+		}
+		};
+		 
+		stickyNav();
+		 
+		$(window).scroll(function() {
+			stickyNav();
+		});
+		});
+		
+	</script>
+	
+	
+
+</body>
+</html>
